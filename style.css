@@ -1,0 +1,79 @@
+#game-screen {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #6db5f0, #c689d1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-button {
+  font-size: 48px;
+  padding: 32px 64px;
+  background: linear-gradient(to bottom right, #1e90ff, #8a2be2);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  border: none;
+  cursor: pointer;
+}
+
+#magic-selection {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6db5f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.magic-card {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.magic-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.magic-description {
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.magic-card:hover .magic-description {
+  opacity: 1;
+}
+
+#magic-selection-form {
+  margin-top: 40px;
+}
+
+label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+select {
+  width: 200px;
+  height: 80px;
+  font-size: 16px;
+}
